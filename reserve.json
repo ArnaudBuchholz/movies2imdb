@@ -1,0 +1,34 @@
+{
+  "port": 3001,
+  "mappings": [{
+    "match": "^/imdb-.*",
+    "custom": "./http-cache"
+  }, {
+    "match": "^/imdb-title/(.*)",
+    "url": "https://www.imdb.com/title/$1/"
+  }, {
+    "match": "^/imdb-releaseinfo/(.*)",
+    "url": "https://www.imdb.com/title/$1/releaseinfo/"
+  }, {
+    "match": "^/imdb-query/(.)(.*)",
+    "url": "https://sg.media-imdb.com/suggests/$1/$1$2.json"
+  }, {
+    "match": "^/gpf.js",
+    "file": "node_modules/gpf-js/build/gpf-debug.js"
+  }, {
+    "match": "^/gpf-src/(.*)",
+    "file": "../gpf-js/src/$1"
+  }, {
+    "match": "^/jquery.js",
+    "url": "https://code.jquery.com/jquery-3.3.1.min.js"
+  }, {
+    "match": "^/bootstrap.js",
+    "url": "https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.bundle.min.js"
+  }, {
+    "match": "^/bootstrap.css",
+    "url": "https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+  }, {
+    "match": "/(.*)",
+    "file": "./$1"
+  }]
+}

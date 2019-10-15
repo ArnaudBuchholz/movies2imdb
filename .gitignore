@@ -1,0 +1,15 @@
+# Windows specifics
+Thumbs.db
+Desktop.ini
+
+# Git override
+
+.gitconfig
+
+# NPM
+node_modules/
+npm-debug.log
+
+# Temporary files
+
+debug.log

@@ -1,0 +1,41 @@
+<html>
+  <head>
+    <title>Movies2IMDB</title>
+    <script>var gpfSourcesPath = "/gpf-src/";</script>
+    <script src="/gpf-src/boot.js"></script>
+    <!-- <script src="/gpf.js"></script> -->
+    <script src="/jquery.js"></script>
+    <script src="/bootstrap.js"></script>
+    <link rel= "stylesheet" href="/bootstrap.css" />
+  </head>
+  <body>
+    <div class="input-group px-3 py-1">
+      <div class="input-group-prepend">
+        <span class="input-group-text" id="lbl-csv">Choose CSV file: </span>
+      </div>
+      <input id="csv-input" type="file" accept="text/csv" class="form-control" placeholder="CSV file name" aria-label="CSV file name" aria-describedby="lbl-csv">
+    </div>
+    <div class="input-group px-3 pb-1">
+      <div class="input-group-prepend">
+        <span class="input-group-text" id="lbl-imdb">Choose IMDB file: </span>
+      </div>
+      <input id="import-input" type="file" accept="application/json" class="form-control" placeholder="IMDB file name" aria-label="IMDB file name" aria-describedby="lbl-imdb">
+    </div>
+    <div class="btn-toolbar px-3 pb-1" role="toolbar" aria-label="Toolbar with button groups">
+      <button id="export" class="btn bn-light" title="Export database">&#128228;</button>
+      <a id="export-link" href="" download="movies.imdb.json" style="display: none;" ></a>
+    </div>
+    <div class="progress mx-3 mb-2">
+      <div id="progress" class="progress-bar progress-bar-striped" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%">0%</div>
+    </div>
+    <table class="table">
+      <thead>
+        <th scope="col">Title</th>
+        <th scope="col">IMDB</th>
+      </thead>
+      <tbody  id="movies">
+      </tbody>
+    </table>
+  </body>
+  <script src="/index.js"></script>
+</html>

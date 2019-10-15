@@ -1,0 +1,22 @@
+{
+  "name": "movies2imdb",
+  "version": "1.0.0",
+  "description": "Minimalist tool fetching movie info from imdb",
+  "scripts": {
+    "start": "reserve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ArnaudBuchholz/movies2imdb.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ArnaudBuchholz/movies2imdb/issues"
+  },
+  "homepage": "https://github.com/ArnaudBuchholz/movies2imdb#readme",
+  "dependencies": {
+    "gpf-js": "^0.2.9",
+    "reserve": "^1.0.5"
+  }
+}
