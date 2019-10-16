@@ -17,6 +17,6 @@
   "homepage": "https://github.com/ArnaudBuchholz/movies2imdb#readme",
   "dependencies": {
     "gpf-js": "^0.2.9",
-    "reserve": "^1.0.5"
+    "reserve": "^1.1.1"
   }
 }
